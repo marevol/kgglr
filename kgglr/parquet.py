@@ -10,6 +10,6 @@ def to_parquet(data_df, filename):
     pq.write_table(table, filename)
 
 def read_parquet(filename):
-    print(f'Saving {filename}')
+    print(f'Loading {filename}')
     table = pq.read_table(filename)
     return table.to_pandas()
